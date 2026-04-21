@@ -1,0 +1,45 @@
+  name: Bug Report
+  description: Something in GridLine isn't working right
+  title: "[Bug] "
+  labels: ["bug"]
+  body:
+    - type: markdown
+      attributes:
+        value: |
+          Thanks for taking the time to report this. The more detail you give,
+          the faster it can be reproduced and fixed.
+    - type: textarea
+      id: what-happened
+      attributes:
+        label: What happened?
+        description: What did you expect vs. what actually happened?
+      validations:
+        required: true
+    - type: textarea
+      id: steps
+      attributes:
+        label: Steps to reproduce
+        description: Numbered steps if possible
+      validations:
+        required: false
+    - type: input
+      id: app-version
+      attributes:
+        label: GridLine version
+        placeholder: "1.0.0"
+      validations:
+        required: true
+    - type: input
+      id: os
+      attributes:
+        label: Device / OS
+        placeholder: "Android 14 (Pixel 8)"
+      validations:
+        required: true
+    - type: textarea
+      id: logs
+      attributes:
+        label: Screenshots or session data
+        description: Optional — drag in a screenshot or the .rcz file that triggered the issue
+      validations:
+        required: false
